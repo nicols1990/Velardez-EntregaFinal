@@ -20,7 +20,7 @@ def crear_producto(request):
       if formulario.is_valid():
          info=formulario.cleaned_data
          #aca crea el auto en la vista
-         producto=Producto(codigo=info.get("codigo"),descripcion=info.get("descripcion"))
+         producto=Producto(codigo=info.get("codigo"),descripcion=info.get("descripcion"),fecha=info.get("fecha"))
          #aca lo guarda en la base de datos
          producto.save()
          return redirect("lista_de_productos")
