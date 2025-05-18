@@ -8,4 +8,4 @@ class Producto(models.Model):
     
     
 def __str__(self):
-    return f'{self.codigo}-{self.descripcion}'
+    return f'{self.codigo} - {self.descripcion}'

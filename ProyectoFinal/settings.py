@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'PrimeraPagina',
-
+    "usuarios",
     
 ]
 
@@ -123,3 +123,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Esto hace que cuando estoy logiado y quiero modificar o eliminar un producto, me lleva al login devuelta, una ves hecho la modificacion o eliminacion
+LOGIN_URL= "/usuarios/login/"
